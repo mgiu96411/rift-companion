@@ -1,0 +1,18 @@
+name: Feature request
+description: Suggest something for Rift Companion
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+      description: What problem would it solve while you're playing?
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: >
+        Heads-up on scope: Rift Companion is **read-only** by design — it uses only Riot's official
+        local APIs, never automates input, and reads no game memory. Ideas that need automation,
+        memory reading, or hidden game state (e.g. enemy ability/ultimate cooldowns) are out of
+        scope on purpose. Everything else is fair game.

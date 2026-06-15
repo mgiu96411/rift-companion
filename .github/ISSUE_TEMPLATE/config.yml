@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: ⬇ Download Rift Companion
+    url: https://riftcompanion.com/download
+    about: Get the latest version for macOS.
+  - name: 💬 Questions & discussion
+    url: https://github.com/mgiu96411/rift-companion/discussions
+    about: Ask anything, share setups, or request features in Discussions.
+  - name: ❓ FAQ
+    url: https://github.com/mgiu96411/rift-companion/blob/main/FAQ.md
+    about: Is there a LoL overlay for Mac? Will it get me banned? Read this first.

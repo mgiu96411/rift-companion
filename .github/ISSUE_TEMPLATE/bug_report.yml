@@ -1,0 +1,38 @@
+name: Bug report
+description: Something in Rift Companion isn't working right
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for reporting. Rift Companion is a native macOS overlay for League of Legends — the more detail, the faster the fix.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what actually happened?
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: e.g. macOS 14.5 (Sonoma), Apple silicon
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: Rift Companion version
+      placeholder: e.g. 1.1.2 (see the menu-bar icon → About)
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Game mode
+      options: ["Summoner's Rift", "ARAM", "Arena", "Champ select only", "Other / not sure"]
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: 1. Lock in champ … 2. Load into game … 3. …
