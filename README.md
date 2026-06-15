@@ -5,12 +5,25 @@ champion, matchup/counter-build and gold-lead panels pinned to your live game, a
 enemy summoner-spell cooldowns. The only native overlay built for the Mac League client — every
 other established companion (Porofessor, Blitz, Mobalytics) runs on Overwolf and is Windows-only.
 
-**Download:** https://riftcompanion.com/download
+**[⬇ Download for Mac](https://riftcompanion.com/download)** · macOS 14+ · Apple silicon · free
+
+![Champ select: popular runes and build](screenshots/champ-select.png)
 
 ## Why it exists
 
 Mac players had no native League overlay. Overwolf — what Porofessor, Blitz and Mobalytics are
 built on — doesn't run on macOS. Rift Companion fills that gap natively.
+
+## Rift Companion vs the Windows-only companions, on Mac
+
+| | Rift Companion | Porofessor / Blitz / Mobalytics |
+|---|:---:|:---:|
+| Runs natively on macOS (Apple silicon) | ✅ | ❌ (Overwolf is Windows-only) |
+| In-game overlay on Mac | ✅ | ❌ |
+| Champ-select runes & builds | ✅ | ✅ (Windows) |
+| Enemy summoner-spell timers | ✅ (click to mark) | ✅ (Windows) |
+| macOS permissions required | None by default | n/a |
+| Price | Free | Freemium |
 
 ## What it does
 
@@ -21,6 +34,10 @@ built on — doesn't run on macOS. Rift Companion fills that gap natively.
 - **Gold** — hold Tab for your lane gold lead and per-champion totals; release and it's gone.
 - Panels show on your terms (hold Tab, tap the shop key, or always-on) and are repositionable,
   with positions saved per game mode — Summoner's Rift, ARAM and Arena.
+
+![In-game build and matchup panels](screenshots/overlay-builds.png)
+![Enemy summoner-spell cooldown timers](screenshots/cooldowns.png)
+![Gold lead on Tab](screenshots/gold.png)
 
 ## Built to stay clean
 
@@ -34,6 +51,11 @@ Riot's policies can change, and your account is your responsibility.
 ## Requirements
 
 macOS 14 (Sonoma) or later · Apple silicon · League of Legends installed · free, no account.
+
+## FAQ
+
+See [FAQ.md](FAQ.md) — including *"Is there a League of Legends overlay for Mac?"* and
+*"Do League overlays work on Mac?"*
 
 ## Feedback
 
