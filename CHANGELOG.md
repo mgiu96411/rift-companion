@@ -9,6 +9,11 @@ Versions use a two-part `MAJOR.MINOR` scheme. Builds before 1.3 shipped under th
 internal labels (1.1 shipped as build 1.1.1, 1.2 as build 1.1.2); GitHub Releases carry the
 public two-part labels.
 
+## 1.3 — July 2026
+
+- Rift Companion now updates itself — when a new version is ready you'll get a "Relaunch to update" prompt right in the app. No more downloading from the site by hand.
+- This 1.3 is the last version you'll install manually — from here on, updates come to you.
+
 ## 1.2 — June 2026
 
 - Gold panel now pairs you against your direct lane opponent, colors who's ahead, and underlines
