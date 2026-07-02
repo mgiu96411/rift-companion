@@ -7,7 +7,11 @@ All notable releases of Rift Companion, newest first. The canonical changelog li
 
 Versions use a two-part `MAJOR.MINOR` scheme. Builds before 1.3 shipped under three-part
 internal labels (1.1 shipped as build 1.1.1, 1.2 as build 1.1.2); GitHub Releases carry the
-public two-part labels.
+public two-part labels. 1.3.1 is a one-off patch exception (build-artifact fix only).
+
+## 1.3.1 — July 2026
+
+- Fixed: the in-app What's New tab wasn't showing recent updates.
 
 ## 1.3 — July 2026
 
