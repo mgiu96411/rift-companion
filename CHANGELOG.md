@@ -11,7 +11,18 @@ public two-part labels.
 
 ## 1.3 — July 2026
 
-- Rift Companion now updates itself — when a new version is ready you'll get a "Relaunch to update" prompt right in the app. No more downloading from the site by hand.
+- Redesigned Live view: a wider window with a champ-select dashboard and per-player
+  loading-screen cards for both teams.
+- New Home tab: a position-by-position tier list and a patch-summary image (click to preview).
+- Tap a loading-screen player to see if they're a one-trick or their most-played champions.
+- Send feedback right from the app — no email client required.
+- Fixed: hovering a champion in champ select now shows ally and enemy picks before they lock in,
+  not just after.
+- If Rift Companion ever needs to pause for an update, it now waits until your game ends instead
+  of interrupting a match, and shows a clear "Update Required" screen with a download button
+  instead of a dead end.
+- Rift Companion now updates itself — when a new version is ready you'll get a "Relaunch to
+  update" prompt right in the app. No more downloading from the site by hand.
 - This 1.3 is the last version you'll install manually — from here on, updates come to you.
 
 ## 1.2 — June 2026
