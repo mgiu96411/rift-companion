@@ -45,6 +45,17 @@ leaves your Mac — the app sends only an anonymous usage ping (opt-out in Setti
 
 macOS 14 (Sonoma) or later, Apple silicon, and League of Legends installed. It's free, no account.
 
+## How do I know my download is genuine?
+
+Every release is Developer ID-signed, Apple-notarized, and ships with SHA-256 checksums you can
+check with built-in macOS tools — see [docs/verify.md](docs/verify.md).
+
+## macOS says the app "is damaged" — what now?
+
+That's a stale download from before builds were notarized. Delete it and grab the current version
+from [riftcompanion.com/download](https://riftcompanion.com/download) — full install and
+troubleshooting steps in [docs/install.md](docs/install.md).
+
 ---
 
 Not affiliated with or endorsed by Riot Games. League of Legends and Riot Games are trademarks of

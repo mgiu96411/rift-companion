@@ -1,16 +1,31 @@
 # Changelog
 
-All notable releases of Rift Companion. Download the latest at
-[riftcompanion.com/download](https://riftcompanion.com/download).
+All notable releases of Rift Companion, newest first. The canonical changelog lives at
+[riftcompanion.com/changelog](https://riftcompanion.com/changelog); download the latest at
+[riftcompanion.com/download](https://riftcompanion.com/download) or from
+[GitHub Releases](../../releases).
 
-## 1.1.2
+Versions use a two-part `MAJOR.MINOR` scheme. Builds before 1.3 shipped under three-part
+internal labels (1.1 shipped as build 1.1.1, 1.2 as build 1.1.2); GitHub Releases carry the
+public two-part labels.
 
-- Developer ID signing + notarization pipeline so the app opens cleanly on macOS.
-- Stability and packaging fixes.
+## 1.2 — June 2026
 
-The native macOS overlay for League of Legends: champ-select runes & builds, in-game build and
-matchup/counter-build panels, click-to-mark enemy summoner-spell cooldowns, and gold lead on Tab.
-Read-only, official local APIs only, zero macOS permissions by default, free.
+- Gold panel now pairs you against your direct lane opponent, colors who's ahead, and underlines
+  the lane winner.
+- The team ahead on total gold is called out more clearly; team labels now read BLUE / RED.
+- Behind the scenes: Apple-notarized distribution (Developer ID signing + notarization, so the
+  app opens cleanly on macOS) and single-source versioning across all builds.
+
+## 1.1 — June 2026 — First public release
+
+- Read-only in-game overlays: popular build, matchup-adapted build, gold tracking, and
+  summoner-spell cooldowns.
+- Champ-select window reads the League client and shows popular runes plus a build for your
+  champion.
+- Main window with Live, Home, What's New, and Settings tabs, launched from the menu-bar icon.
+- ARAM support, resolution-aware scaling, and brand polish (logo violet, hextech gold).
+- Anonymous, opt-out usage ping — never your Riot ID, summoner name, or game data.
 
 ---
 

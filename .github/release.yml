@@ -1,0 +1,14 @@
+# Release-notes categorization for auto-generated notes (fallback only —
+# real releases are published by scripts/publish-github.sh in the private repo
+# with curated notes from mac-app/release-notes/<version>.md).
+changelog:
+  categories:
+    - title: Fixes
+      labels:
+        - bug
+    - title: Improvements
+      labels:
+        - enhancement
+    - title: Other
+      labels:
+        - "*"

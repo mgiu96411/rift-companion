@@ -1,7 +1,8 @@
 # Contributing
 
 Rift Companion's app is closed-source. This repository hosts its public README, FAQ, changelog,
-and issue tracker — so "contributing" here means **feedback**, which is genuinely valued:
+docs, downloads ([Releases](../../releases)), and issue tracker — so "contributing" here means
+**feedback**, which is genuinely valued (all support channels: [SUPPORT.md](SUPPORT.md)):
 
 - **Found a bug?** Open an [issue](../../issues/new/choose) with your macOS version, app version,
   and steps to reproduce.

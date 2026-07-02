@@ -16,6 +16,17 @@ Rift Companion is **read-only** by design:
 Riot's policies can change, and your account is your responsibility. Rift Companion does not claim
 to be Riot-approved or ban-proof.
 
+## Release integrity
+
+Every build is Developer ID-signed and Apple-notarized, releases ship with SHA-256 checksums, and
+in-app updates (from 1.3) are EdDSA-signed Sparkle updates served over HTTPS. How to verify all of
+it yourself: [docs/verify.md](docs/verify.md).
+
+## Supported versions
+
+Only the [latest release](../../releases/latest) is supported. From version 1.3 the app updates
+itself, so staying current is automatic.
+
 ## Reporting a vulnerability
 
 Found a security or privacy issue? Please open a
