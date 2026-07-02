@@ -3,8 +3,8 @@
 ## Is there a League of Legends overlay for Mac?
 
 Yes — Rift Companion. It's a native macOS overlay that pins build, matchup and cooldown panels to
-your live game and shows popular runes and builds in champ select. It's the only native overlay for
-the Mac League client: every other established companion — Porofessor, Blitz, Mobalytics — runs on
+your live game and shows popular runes and builds in champ select. It's the first native overlay
+built for the Mac League client — and still the only one: every other established companion — Porofessor, Blitz, Mobalytics — runs on
 Overwolf, which is Windows-only. Free, macOS 14 or newer.
 
 ## Do League of Legends overlays work on Mac?

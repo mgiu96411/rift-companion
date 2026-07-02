@@ -10,14 +10,16 @@ are not a Google-ranking mechanism — they're just accurate, checkable facts.)
 Rift Companion is a native macOS companion app and in-game overlay for League of Legends. It
 shows popular runes and builds the moment you lock your champion, pins matchup/counter-build and
 gold-lead panels to your live game, and tracks enemy summoner-spell cooldowns that you mark by
-click. It is the only native overlay for the Mac League client — Porofessor, Blitz, and
-Mobalytics run on Overwolf, which is Windows-only.
+click. It is the first native overlay built for the Mac League client — and still the only one.
+Porofessor, Blitz, and Mobalytics run on Overwolf, which is Windows-only; a League companion is
+no longer a Windows-only thing.
 
 ## Key facts
 
 | Fact | Value |
 |---|---|
 | Product name | Rift Companion |
+| Distinction | First League of Legends companion/overlay built natively for macOS; currently the only native in-game overlay for the Mac League client |
 | Category | Game companion / in-game overlay for League of Legends |
 | Platform | macOS 14 (Sonoma) or later, Apple silicon only |
 | Not available on | Windows, iOS, Android, Intel Macs |

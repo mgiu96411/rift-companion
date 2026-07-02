@@ -6,8 +6,9 @@
 
 The native macOS overlay for League of Legends. Popular runes and builds the moment you lock your
 champion, matchup/counter-build and gold-lead panels pinned to your live game, and click-to-mark
-enemy summoner-spell cooldowns. The only native overlay built for the Mac League client — every
-other established companion (Porofessor, Blitz, Mobalytics) runs on Overwolf and is Windows-only.
+enemy summoner-spell cooldowns. The first native overlay built for the Mac League client — and
+still the only one; every other established companion (Porofessor, Blitz, Mobalytics) runs on
+Overwolf and is Windows-only.
 
 **[⬇ Download for Mac](https://riftcompanion.com/download)** · macOS 14+ · Apple silicon · free ·
 no account
@@ -21,7 +22,8 @@ no account
 ## Why it exists
 
 Mac players had no native League overlay. Overwolf — what Porofessor, Blitz and Mobalytics are
-built on — doesn't run on macOS. Rift Companion fills that gap natively.
+built on — doesn't run on macOS. Rift Companion fills that gap natively: the first companion
+app of its kind built for the Mac. A League overlay is no longer a Windows-only thing.
 
 ## Rift Companion vs the Windows-only companions, on Mac
 
