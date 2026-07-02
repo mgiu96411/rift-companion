@@ -9,15 +9,19 @@ Each [GitHub Release](../../../releases) attaches a `SHA256SUMS-<version>.txt` c
 `.dmg` and `.zip`. With the downloaded files and the checksum file in the same folder:
 
 ```sh
-shasum -a 256 -c SHA256SUMS-1.3.txt
+shasum -a 256 -c SHA256SUMS-1.2.txt
 ```
 
-Expected output: `Rift Companion-1.3.dmg: OK` (and the same for the `.zip`). Or hash a single
-file and compare by eye:
+Expected output: `RiftCompanion-1.2.dmg: OK` (and the same for the `.zip`). Or hash a single
+file and compare against the sums file by eye:
 
 ```sh
-shasum -a 256 "Rift Companion-1.3.dmg"
+shasum -a 256 RiftCompanion-1.2.dmg
 ```
+
+Naming note: GitHub release assets carry dot-free names (`RiftCompanion-1.2.dmg`), while the
+website download has a space (`Rift Companion-1.2.dmg`). The bytes are identical — to verify a
+website download with `-c`, rename it to the GitHub name first, or just compare the hash by eye.
 
 Checksums are attached from version 1.2 onward. The 1.1 release predates the notarization
 pipeline and no longer distributes binaries — download the latest version instead.
