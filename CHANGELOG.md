@@ -9,6 +9,11 @@ Versions use a two-part `MAJOR.MINOR` scheme. Builds before 1.3 shipped under th
 internal labels (1.1 shipped as build 1.1.1, 1.2 as build 1.1.2); GitHub Releases carry the
 public two-part labels. 1.3.1 is a one-off patch exception (build-artifact fix only).
 
+## 1.3.2 — August 2026
+
+- Fixed: the popular-runes card had vanished from champ select after op.gg changed its data format behind the scenes. Runes are back — and the app now reads the format op.gg declares, so this kind of silent change can't hide the card again.
+- Fixed: champ-select counter win rates come straight from op.gg's own numbers again instead of a derived fallback.
+
 ## 1.3.1 — July 2026
 
 - Fixed: the in-app What's New tab wasn't showing recent updates.
