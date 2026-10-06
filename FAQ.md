@@ -21,15 +21,17 @@ second monitor or phone for stats. Rift Companion is the native Mac alternative.
 
 ## Will it get me banned?
 
-Rift Companion is read-only: it never writes to the client, injects nothing, and reads no game
-memory — the exact practices Riot's guidelines prohibit. It uses only Riot's official local APIs,
-the ones those guidelines permit. Riot's policies can change, and your account is your
+Rift Companion injects nothing and reads no game memory. The public production build uses local
+League APIs without writes. The separately signed beta can create or update one app-owned rune
+page and select it as current only after explicit confirmation. Riot's policies can change, and your account is your
 responsibility.
 
 ## What permissions does it need?
 
-None by default — no Screen Recording, Accessibility, or Input Monitoring. Only if you rebind to
-certain keys does macOS require Input Monitoring, and the app tells you.
+Showing panels with Tab needs none. In-game panel dragging requires Accessibility, which the
+app asks for once, outside a match. Enabling Shop
+uses a letter key by default and requires Input Monitoring; the app shows the permission status
+and action.
 
 ## Does it press keys or play for me?
 
@@ -37,9 +39,16 @@ No. It reads, you play. No automation of any kind.
 
 ## Where does the data come from?
 
-Popular builds and counters from [op.gg](https://op.gg); champion, item and rune data from Riot's
-Data Dragon; your live game from the local client APIs on your own machine. Your game data never
-leaves your Mac — the app sends only an anonymous usage ping (opt-out in Settings).
+Popular builds and counters come from [op.gg](https://op.gg); rank lookups send Riot IDs and
+region to op.gg; champion, item and rune data come from Riot Data Dragon; live game state comes
+from local client APIs. Expanding a loading-review player row sends game name, tag line, region,
+and a recent-match limit to op.gg. The response includes match identifiers and participant
+champion names; Rift Companion uses only the champion names for its summary. Rift Companion sends
+a random, stable install identifier plus app and macOS versions at launch and roughly every five
+minutes, with no in-app off switch. Optional feedback and surveys reuse the identifier, and
+showing the main window fetches optional survey configuration. Availability checks run at launch
+and around confirmed beta Rune Apply. Cloudflare processes requests and can see IP addresses. See the
+[privacy policy](https://riftcompanion.com/privacy) for fields and retention.
 
 ## What do I need?
 

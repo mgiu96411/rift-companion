@@ -33,7 +33,7 @@ app of its kind built for the Mac. A League overlay is no longer a Windows-only 
 | In-game overlay on Mac | ✅ | ❌ |
 | Champ-select runes & builds | ✅ | ✅ (Windows) |
 | Enemy summoner-spell timers | ✅ (click to mark) | ✅ (Windows) |
-| macOS permissions required | None by default | n/a |
+| macOS permissions required | Accessibility for in-game dragging (asked once, outside a match) | n/a |
 | Price | Free | Freemium |
 
 ## What it does
@@ -43,8 +43,8 @@ app of its kind built for the Mac. A League overlay is no longer a Windows-only 
 - **Cooldowns** — click an enemy summoner spell when it's used; the panel counts it back up,
   item- and level-aware. Manual marking, no automation.
 - **Gold** — hold Tab for your lane gold lead and per-champion totals; release and it's gone.
-- Panels show on your terms (hold Tab, tap the shop key, or always-on) and are repositionable,
-  with positions saved per game mode — Summoner's Rift, ARAM and Arena.
+- Panels show on your terms (hold Tab, tap the shop key, or always-on). Drag any panel in game
+  to move it; positions are saved per game mode — Summoner's Rift, ARAM and Arena.
 
 ![In-game build and matchup panels](screenshots/overlay-builds.png)
 ![Enemy summoner-spell cooldown timers](screenshots/cooldowns.png)
@@ -68,17 +68,28 @@ and the app's code signature and notarization are verifiable with built-in macOS
 
 ## Built to stay clean
 
-- **Read-only.** Never writes to the client, injects nothing, reads no game memory.
+- **No injection or memory reading.** The public production build uses local League APIs without
+  writes. The separately signed beta can apply one app-owned rune page or import an item set,
+  each only after explicit confirmation.
 - **Official local APIs only** — the same ones Riot's guidelines permit.
-- **Zero macOS permissions** by default — no Screen Recording, Accessibility, or Input Monitoring.
+- **Showing panels with Tab needs no permissions.** In-game panel dragging needs Accessibility,
+  which the app asks for once, outside a match; enabling Shop uses a letter key by default and
+  requires Input Monitoring.
 - Runs alongside the embedded Vanguard anti-cheat on macOS.
 
 Riot's policies can change, and your account is your responsibility.
 
 ## Privacy
 
-Your game data never leaves your Mac. The app sends only an anonymous usage ping, which you can
-turn off in Settings. Full policy: [riftcompanion.com/privacy](https://riftcompanion.com/privacy).
+Rank lookups send Riot IDs and region to op.gg. Expanding a loading-review player row sends that
+player's game name, tag line, region, and a recent-match limit. The op.gg response includes match
+identifiers and participant champion names; the app uses only the champion names for its summary.
+The macOS app sends a random, stable install identifier plus app and macOS versions at
+launch and roughly every five minutes, with no in-app off switch. Optional feedback and surveys
+reuse the identifier. Showing the main window fetches the optional survey configuration;
+availability checks run at launch and around confirmed beta Rune Apply. Cloudflare processes
+these requests and can see IP addresses. Full details:
+[riftcompanion.com/privacy](https://riftcompanion.com/privacy).
 
 ## Requirements
 

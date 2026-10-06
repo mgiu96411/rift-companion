@@ -9,6 +9,24 @@ Versions use a two-part `MAJOR.MINOR` scheme. Builds before 1.3 shipped under th
 internal labels (1.1 shipped as build 1.1.1, 1.2 as build 1.1.2); GitHub Releases carry the
 public two-part labels. 1.3.1 is a one-off patch exception (build-artifact fix only).
 
+## 1.4 — October 2026
+
+- New Live tab: browse every champion any time, even with League closed. Filter by position and open a champion to see its popular build, runes and counters.
+- Your last champion select stays on screen after you quit League, so you can look back at the draft.
+- Champ-select cards arrange themselves neatly as you resize the window, and resizing is much smoother.
+- Team builds in champ select: click a teammate's pick to open their champion's build and runes for their position.
+- In game, Live now shows the popular build and rune guide for your champion.
+- The keystone rune is back front and center, and each card sizes itself to what it shows instead of stretching across the window.
+- Drag your overlay panels anywhere in game. Positions are saved separately for Summoner's Rift, ARAM and Arena. Dragging needs macOS Accessibility permission; the app asks once, outside a match.
+- Reposition Mode is gone — dragging in game replaces it, and your saved panel positions carry over.
+- Tab always shows the overlay with no permissions needed; the old fallback show key has been removed.
+- Expand a player row to see the champions they've been playing recently.
+- One text size setting now covers the app window and every in-game overlay.
+- Smoother scrolling in the champion list, and less background work while League is idle.
+- A larger default window.
+- New Support button: if you'd like to back Rift Companion, it opens our Patreon page in your browser.
+- Updated privacy policy and terms to cover in-game dragging and the Support link.
+
 ## 1.3.2 — August 2026
 
 - Fixed: the popular-runes card had vanished from champ select after op.gg changed its data format behind the scenes. Runes are back — and the app now reads the format op.gg declares, so this kind of silent change can't hide the card again.

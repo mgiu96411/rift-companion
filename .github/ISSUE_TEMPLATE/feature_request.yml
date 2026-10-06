@@ -12,7 +12,8 @@ body:
   - type: markdown
     attributes:
       value: >
-        Heads-up on scope: Rift Companion is **read-only** by design — it uses only Riot's official
-        local APIs, never automates input, and reads no game memory. Ideas that need automation,
-        memory reading, or hidden game state (e.g. enemy ability/ultimate cooldowns) are out of
-        scope on purpose. Everything else is fair game.
+        Heads-up on scope: Rift Companion uses Riot's official local APIs, never automates input,
+        and reads no game memory. The public production build does not write to the client;
+        signed-beta Rune Apply can create/update one app-owned page and select it as current after
+        explicit confirmation. Ideas that need automation, memory reading, or hidden game state
+        (e.g. enemy ability/ultimate cooldowns) are out of scope on purpose. Everything else is fair game.

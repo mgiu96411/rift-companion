@@ -1,7 +1,7 @@
 # What players use Rift Companion for
 
-Real use cases, in the words players search with. Everything below is read-only and works with
-zero setup.
+Real use cases, in the words players search with. Everything below uses official local APIs,
+without injection, memory reading, or gameplay automation, and works with zero setup.
 
 ## "I don't want to alt-tab to op.gg mid-game on my Mac"
 
@@ -36,13 +36,14 @@ mode.
 
 ## "I want help, but I'm not risking my account"
 
-Rift Companion is read-only: official local Riot APIs only, no memory reading, no injection, no
-input automation, and no macOS permissions by default. It runs alongside the embedded Vanguard
-anti-cheat on macOS. Riot's policies can change and your account is your responsibility — but the
-design never crosses the lines Riot's guidelines draw. Details: [SECURITY.md](../SECURITY.md) and
-the [FAQ](../FAQ.md).
+Rift Companion uses official local Riot APIs with no memory reading, injection, or input
+automation; its only macOS permission by default is Accessibility, for dragging panels in game.
+The public production build does not write to the client; the separately signed beta can apply
+one app-owned rune page or import an item set, each only after explicit confirmation. It runs alongside the embedded Vanguard anti-cheat
+on macOS. Riot's policies can change and your account is your responsibility. Details:
+[SECURITY.md](../SECURITY.md) and the [FAQ](../FAQ.md).
 
 ---
 
 Something you'd use it for that isn't covered? [Tell us](../../../discussions) — feature ideas
-within the read-only scope are genuinely welcome.
+within the product scope are genuinely welcome.

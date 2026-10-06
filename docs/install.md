@@ -10,7 +10,8 @@
 3. Launch **Rift Companion**. It lives in the **menu bar** (top-right of your screen) — there is
    no Dock icon to look for.
 4. Start League of Legends. The app detects champ select and the live game automatically; no
-   setup, no account, no permissions dialogs.
+   setup and no account. Outside a match, macOS asks once for Accessibility so you can drag the
+   overlay panels in game.
 
 Want to check the download first? See [Verify a download](verify.md).
 
@@ -49,8 +50,9 @@ the game) is running, and that you're actually in champ select. If it persists, 
 
 ### Panels are in the wrong place
 
-Use **Reposition Panels** from the menu-bar icon to drag them where you want. Positions are saved
-per game mode (Summoner's Rift, ARAM, Arena).
+Drag any visible panel in game to move it (Rift Companion needs Accessibility permission for this;
+check **Setup** if dragging doesn't work). Positions are saved per game mode (Summoner's Rift, ARAM,
+Arena).
 
 ### Uninstall
 

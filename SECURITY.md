@@ -2,16 +2,20 @@
 
 ## Design posture
 
-Rift Companion is **read-only** by design:
+Rift Companion limits its League client access:
 
-- It never writes to the League client, injects no code, and reads no game memory.
+- It injects no code and reads no game memory. The public production build uses local League APIs
+  without writes; the signed beta can create or update one app-owned rune page and select it as
+  current after explicit confirmation.
 - It uses only Riot's official **local** client APIs (on `127.0.0.1`), the same ones Riot's
   guidelines permit.
-- It requires **no macOS permissions** by default — no Screen Recording, Accessibility, or
-  Input Monitoring.
+- Default Tab-only use requires **no macOS permissions**. In-game panel dragging requires
+  Accessibility; enabling Shop uses a letter key by default and requires Input Monitoring.
 - It performs **no automation** — it presses no keys and plays nothing for you.
-- Your game data never leaves your Mac. The app sends only an anonymous usage ping (opt-out in
-  Settings).
+- Rank lookups send Riot IDs and region to op.gg. The app sends a stable install identifier plus
+  app and macOS versions at launch and roughly every five minutes, with no in-app off switch.
+  Optional feedback and surveys reuse the identifier. See the
+  [privacy policy](https://riftcompanion.com/privacy).
 
 Riot's policies can change, and your account is your responsibility. Rift Companion does not claim
 to be Riot-approved or ban-proof.

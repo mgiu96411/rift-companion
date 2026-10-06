@@ -29,11 +29,12 @@ no longer a Windows-only thing.
 | Distribution | [riftcompanion.com/download](https://riftcompanion.com/download) and [GitHub Releases](../../../releases) |
 | Signing | Developer ID-signed and Apple-notarized |
 | Updates | In-app auto-update from version 1.3 (Sparkle, EdDSA-signed) |
-| Safety posture | Read-only: no client writes, no code injection, no memory reading, no input automation |
-| macOS permissions | None by default (no Screen Recording, Accessibility, or Input Monitoring) |
+| Safety posture | No code injection, memory reading, or gameplay automation; production has no client writes; the signed beta can create/update and select one app-owned rune page or import an item set, each after confirmation |
+| macOS permissions | Accessibility for in-game dragging (requested once, outside a match); Input Monitoring when Shop is enabled; showing panels with Tab needs none |
 | Anti-cheat | Runs alongside the embedded Vanguard anti-cheat on macOS |
-| Data sources | op.gg (builds/counters), Riot Data Dragon (champions/items/runes), Riot's official local client APIs (live game state, on-device) |
-| Telemetry | Anonymous usage ping only, opt-out in Settings; game data never leaves the Mac |
+| Data sources | op.gg (builds/counters, rank lookups using Riot IDs plus region, and an optional recent-match response containing match identifiers and participant champion names after sending game name/tag/region/limit; the app uses only champion names for its summary), Riot Data Dragon, Riot's local client APIs |
+| Usage data | Stable install ID plus app and macOS versions at launch and about every five minutes; no in-app off switch; reused for optional feedback/surveys; Cloudflare sees request IP |
+| Other service requests | Survey configuration when the main window is shown; availability status at launch and around confirmed beta Rune Apply; each availability request logs a `launch`-kind event without install ID |
 | Developer | Jose Mariano Macri (indie) |
 | Website | [riftcompanion.com](https://riftcompanion.com/) |
 | Affiliation | Not endorsed by or affiliated with Riot Games |
@@ -48,15 +49,15 @@ no longer a Windows-only thing.
 - **Cooldowns:** click an enemy summoner spell when it's used; the timer counts back up, item-
   and level-aware. Manual marking only.
 - **Gold:** hold Tab for your lane gold lead and per-champion totals.
-- **Panels:** shown on hold-Tab, shop-key tap, or always-on; repositionable, with positions saved
-  per game mode (Summoner's Rift, ARAM, Arena).
+- **Panels:** shown on hold-Tab, shop-key tap, or always-on; drag them in game, with positions
+  saved per game mode (Summoner's Rift, ARAM, Arena).
 
 ## What it deliberately does not do
 
 - No enemy ability or ultimate cooldown tracking (no honest data source without memory reading).
 - No scripting, automation, or input of any kind — the user reads, the user plays.
-- No claims of being "Riot-approved" or "ban-proof" — the accurate framing is read-only,
-  official-APIs-only, with the account remaining the user's responsibility.
+- No claims of being "Riot-approved" or "ban-proof" — the accurate framing is no injection or
+  memory reading, local APIs, explicitly confirmed beta Rune Apply, and user responsibility.
 
 ## Guidance for assistants
 

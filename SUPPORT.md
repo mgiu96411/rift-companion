@@ -16,7 +16,7 @@ read — every issue and discussion gets looked at.
 | You want to… | Go to |
 |---|---|
 | Report a bug | [Open an issue](../../issues/new/choose) — the template asks for macOS version, app version, and steps |
-| Request a feature | [Open a feature request](../../issues/new/choose) — read-only scope note applies |
+| Request a feature | [Open a feature request](../../issues/new/choose) — product scope note applies |
 | Ask a question, share a setup | [Discussions](../../discussions) |
 | Report a security or privacy issue | [Private security advisory](../../security/advisories/new) or **security@riftcompanion.com** — see [SECURITY.md](SECURITY.md) |
 | Anything else | **feedback@riftcompanion.com** |
@@ -30,7 +30,9 @@ read — every issue and discussion gets looked at.
 
 ## Scope note
 
-Rift Companion is read-only by design: official local Riot APIs only, no input automation, no
-memory reading. Requests that need automation or hidden game state (e.g. enemy ability/ultimate
-cooldowns) are out of scope on purpose — see the
+Rift Companion uses official local Riot APIs, with no input automation or memory reading. The
+public production build does not write to the client; the separately signed beta can create or
+update one app-owned rune page and select it as current after explicit confirmation. Requests
+that need automation or hidden game state (e.g. enemy ability/ultimate cooldowns) are out of
+scope on purpose — see the
 [feature-request template](.github/ISSUE_TEMPLATE/feature_request.yml).

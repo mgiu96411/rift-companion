@@ -6,8 +6,8 @@ docs, downloads ([Releases](../../releases)), and issue tracker — so "contribu
 
 - **Found a bug?** Open an [issue](../../issues/new/choose) with your macOS version, app version,
   and steps to reproduce.
-- **Have an idea?** Open a feature request. Note that Rift Companion is read-only by design — see
-  the scope note in the feature-request template.
+- **Have an idea?** Open a feature request. Rift Companion excludes injection, memory reading,
+  and gameplay automation; see the scope note in the feature-request template.
 - **Just want to talk setups, matchups, or ask a question?** Use
   [Discussions](../../discussions).
 
