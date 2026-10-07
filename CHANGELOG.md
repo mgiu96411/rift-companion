@@ -9,6 +9,14 @@ Versions use a two-part `MAJOR.MINOR` scheme. Builds before 1.3 shipped under th
 internal labels (1.1 shipped as build 1.1.1, 1.2 as build 1.1.2); GitHub Releases carry the
 public two-part labels. 1.3.1 is a one-off patch exception (build-artifact fix only).
 
+## 1.4.2 — October 2026
+
+- Reduced repeated window work when you press and release Tab.
+- Overlays now stay mouse-transparent, while manual cooldown clicks and panel dragging still work.
+- ARAM now moves to the loading screen earlier and works out its build mode sooner.
+- The live roster now shows all five teammates.
+- When rank data isn't available, players are no longer mislabeled Unranked.
+
 ## 1.4 — October 2026
 
 - New Live tab: browse every champion any time, even with League closed. Filter by position and open a champion to see its popular build, runes and counters.
