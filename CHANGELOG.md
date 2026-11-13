@@ -9,6 +9,19 @@ Versions use a two-part `MAJOR.MINOR` scheme. Builds before 1.3 shipped under th
 internal labels (1.1 shipped as build 1.1.1, 1.2 as build 1.1.2); GitHub Releases carry the
 public two-part labels. 1.3.1 is a one-off patch exception (build-artifact fix only).
 
+## 1.5.0 — November 2026
+
+- Refreshed Mac interface across Live, Home, Setup and What's New.
+- Choose a revealed lane opponent during Summoner's Rift champion select to see matchup guidance, with a clearly labeled popular-build fallback when matchup data is unavailable.
+- Newer champion-select layout with stable Build, Runes and Counters sections, aligned five-position rosters and layouts that adapt to window width and text size.
+- Full OP.GG matchup rune pages are shown when a complete page is available; otherwise popular runes are shown with a clear label.
+- Apply Runes: in champion select, review the displayed rune page and apply it yourself. Every create or update asks you to confirm first and only touches the rune page Rift Companion owns; it never deletes or replaces your own pages.
+- Save an item set as a JSON file from the draft Build card or Champion Study. It saves where you choose and never changes League; import it yourself in the League client.
+- Switching away and back with Cmd+Tab recovers cooldown tracking.
+- Live navigation avoids unnecessary repeated layout work.
+- Improved layouts for narrow windows and larger text sizes.
+- Cooldowns now appear in Practice Tool without holding Tab, just as they do in a normal Summoner’s Rift game.
+
 ## 1.4.2 — October 2026
 
 - Reduced repeated window work when you press and release Tab.

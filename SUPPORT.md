@@ -31,8 +31,8 @@ read — every issue and discussion gets looked at.
 ## Scope note
 
 Rift Companion uses official local Riot APIs, with no input automation or memory reading. The
-public production build does not write to the client; the separately signed beta can create or
-update one app-owned rune page and select it as current after explicit confirmation. Requests
+app writes to the client only through the confirmed Apply Runes action (one app-owned rune page,
+selected as current); item-set export saves a file and does not change League. Requests
 that need automation or hidden game state (e.g. enemy ability/ultimate cooldowns) are out of
 scope on purpose — see the
 [feature-request template](.github/ISSUE_TEMPLATE/feature_request.yml).

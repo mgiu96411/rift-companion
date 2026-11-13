@@ -38,8 +38,8 @@ mode.
 
 Rift Companion uses official local Riot APIs with no memory reading, injection, or input
 automation; its only macOS permission by default is Accessibility, for dragging panels in game.
-The public production build does not write to the client; the separately signed beta can apply
-one app-owned rune page or import an item set, each only after explicit confirmation. It runs alongside the embedded Vanguard anti-cheat
+The app writes to the client only when you choose Apply Runes and confirm each create or update of
+one app-owned rune page; item-set export saves a file you import yourself. It runs alongside the embedded Vanguard anti-cheat
 on macOS. Riot's policies can change and your account is your responsibility. Details:
 [SECURITY.md](../SECURITY.md) and the [FAQ](../FAQ.md).
 

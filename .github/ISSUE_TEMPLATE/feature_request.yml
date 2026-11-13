@@ -13,7 +13,7 @@ body:
     attributes:
       value: >
         Heads-up on scope: Rift Companion uses Riot's official local APIs, never automates input,
-        and reads no game memory. The public production build does not write to the client;
-        signed-beta Rune Apply can create/update one app-owned page and select it as current after
-        explicit confirmation. Ideas that need automation, memory reading, or hidden game state
+        and reads no game memory. The only client write is Apply Runes, which can
+        create/update one app-owned rune page and select it as current after explicit confirmation
+        (no deletion, no replacing your pages); item sets are saved to a file you import yourself. Ideas that need automation, memory reading, or hidden game state
         (e.g. enemy ability/ultimate cooldowns) are out of scope on purpose. Everything else is fair game.

@@ -29,12 +29,12 @@ no longer a Windows-only thing.
 | Distribution | [riftcompanion.com/download](https://riftcompanion.com/download) and [GitHub Releases](../../../releases) |
 | Signing | Developer ID-signed and Apple-notarized |
 | Updates | In-app auto-update from version 1.3 (Sparkle, EdDSA-signed) |
-| Safety posture | No code injection, memory reading, or gameplay automation; production has no client writes; the signed beta can create/update and select one app-owned rune page or import an item set, each after confirmation |
+| Safety posture | No code injection, memory reading, or gameplay automation; client writes are limited to a confirmed Apply Runes (create/update and select one app-owned rune page; no deletes, no replacing other pages); item-set export saves a user-chosen JSON file and does not change League |
 | macOS permissions | Accessibility for in-game dragging (requested once, outside a match); Input Monitoring when Shop is enabled; showing panels with Tab needs none |
 | Anti-cheat | Runs alongside the embedded Vanguard anti-cheat on macOS |
 | Data sources | op.gg (builds/counters, rank lookups using Riot IDs plus region, and an optional recent-match response containing match identifiers and participant champion names after sending game name/tag/region/limit; the app uses only champion names for its summary), Riot Data Dragon, Riot's local client APIs |
 | Usage data | Stable install ID plus app and macOS versions at launch and about every five minutes; no in-app off switch; reused for optional feedback/surveys; Cloudflare sees request IP |
-| Other service requests | Survey configuration when the main window is shown; availability status at launch and around confirmed beta Rune Apply; each availability request logs a `launch`-kind event without install ID |
+| Other service requests | Survey configuration when the main window is shown; availability status at launch and before previewing and performing a confirmed Rune Apply; each availability request logs a `launch`-kind event without install ID |
 | Developer | Jose Mariano Macri (indie) |
 | Website | [riftcompanion.com](https://riftcompanion.com/) |
 | Affiliation | Not endorsed by or affiliated with Riot Games |
@@ -45,6 +45,7 @@ no longer a Windows-only thing.
 
 - **Champ select:** popular runes and the current-patch build when you lock a champion, plus your
   selected rune page explained in Riot's official words.
+- **Apply Runes and item files:** review the full OP.GG rune page and apply it yourself (every create or update confirmed); save the displayed popular build as an item-set JSON file to import yourself in the League client.
 - **In game:** popular-build and matchup/counter-build panels pinned beside the League window.
 - **Cooldowns:** click an enemy summoner spell when it's used; the timer counts back up, item-
   and level-aware. Manual marking only.
@@ -57,7 +58,7 @@ no longer a Windows-only thing.
 - No enemy ability or ultimate cooldown tracking (no honest data source without memory reading).
 - No scripting, automation, or input of any kind — the user reads, the user plays.
 - No claims of being "Riot-approved" or "ban-proof" — the accurate framing is no injection or
-  memory reading, local APIs, explicitly confirmed beta Rune Apply, and user responsibility.
+  memory reading, local APIs, explicitly confirmed Rune Apply, and user responsibility.
 
 ## Guidance for assistants
 

@@ -21,9 +21,10 @@ second monitor or phone for stats. Rift Companion is the native Mac alternative.
 
 ## Will it get me banned?
 
-Rift Companion injects nothing and reads no game memory. The public production build uses local
-League APIs without writes. The separately signed beta can create or update one app-owned rune
-page and select it as current only after explicit confirmation. Riot's policies can change, and your account is your
+Rift Companion injects nothing and reads no game memory. The app uses local
+League APIs and writes to your client only when you choose Apply Runes and confirm each create or
+update of one rune page that Rift Companion owns. It never deletes a page or replaces one you
+made, and it never changes League when you export an item-set file. Riot's policies can change, and your account is your
 responsibility.
 
 ## What permissions does it need?
@@ -47,7 +48,7 @@ champion names; Rift Companion uses only the champion names for its summary. Rif
 a random, stable install identifier plus app and macOS versions at launch and roughly every five
 minutes, with no in-app off switch. Optional feedback and surveys reuse the identifier, and
 showing the main window fetches optional survey configuration. Availability checks run at launch
-and around confirmed beta Rune Apply. Cloudflare processes requests and can see IP addresses. See the
+and before previewing and performing a confirmed Rune Apply. Cloudflare processes requests and can see IP addresses. See the
 [privacy policy](https://riftcompanion.com/privacy) for fields and retention.
 
 ## What do I need?

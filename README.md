@@ -68,9 +68,10 @@ and the app's code signature and notarization are verifiable with built-in macOS
 
 ## Built to stay clean
 
-- **No injection or memory reading.** The public production build uses local League APIs without
-  writes. The separately signed beta can apply one app-owned rune page or import an item set,
-  each only after explicit confirmation.
+- **No injection or memory reading.** The app uses local League APIs and writes only when you
+  choose Apply Runes and confirm each create or update of one rune page that Rift Companion owns;
+  it never deletes pages or replaces yours. Item-set export saves a JSON file you choose and does
+  not change League; you import it yourself.
 - **Official local APIs only** — the same ones Riot's guidelines permit.
 - **Showing panels with Tab needs no permissions.** In-game panel dragging needs Accessibility,
   which the app asks for once, outside a match; enabling Shop uses a letter key by default and
@@ -87,7 +88,7 @@ identifiers and participant champion names; the app uses only the champion names
 The macOS app sends a random, stable install identifier plus app and macOS versions at
 launch and roughly every five minutes, with no in-app off switch. Optional feedback and surveys
 reuse the identifier. Showing the main window fetches the optional survey configuration;
-availability checks run at launch and around confirmed beta Rune Apply. Cloudflare processes
+availability checks run at launch and before previewing and performing a confirmed Rune Apply. Cloudflare processes
 these requests and can see IP addresses. Full details:
 [riftcompanion.com/privacy](https://riftcompanion.com/privacy).
 

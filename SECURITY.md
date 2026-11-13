@@ -4,9 +4,14 @@
 
 Rift Companion limits its League client access:
 
-- It injects no code and reads no game memory. The public production build uses local League APIs
-  without writes; the signed beta can create or update one app-owned rune page and select it as
-  current after explicit confirmation.
+- It injects no code and reads no game memory. The app uses local League APIs and writes to the
+  client only when you choose Apply Runes and confirm each create or update: one rune page that
+  Rift Companion owns, which it selects as current. It never deletes a page or replaces one you
+  made. Item-set export saves a JSON file you choose and does not change League. Availability
+  checks run before previewing and performing a confirmed Rune Apply. The app keeps a local League
+  account identifier, the rune page ID, pending-creation metadata and an update-confirmation state
+  flag on your Mac to recognize its own page; the flag does not replace fresh confirmation on every
+  Apply. It persists and transmits no LCU credentials.
 - It uses only Riot's official **local** client APIs (on `127.0.0.1`), the same ones Riot's
   guidelines permit.
 - Default Tab-only use requires **no macOS permissions**. In-game panel dragging requires
